@@ -1,0 +1,11 @@
+var img = new SimpleImage("duke_blue_devil.png");
+print(img);
+function swapRedGreen(){
+        var R = pixel.getRed();
+        var G = pixel.getGreen();
+        pixel.setRed(G);
+        pixel.setGreen(R);
+}
+for (var pixel of img.values()){
+    swapRedGreen();}
+print(img);
